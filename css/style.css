@@ -15,16 +15,15 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #34495e;
   font-size: 1.6rem;
   font-family: sans-serif;
-  background-color: #a31818;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: oldlace;
+  text-decoration-color: #ecf0f1;
 }
 
 /* -------------------------------- 
@@ -357,7 +356,7 @@ Animations
 
 .rotate__content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -497,7 +496,7 @@ Animations
 
 .rotate__content1 {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -512,7 +511,7 @@ Animations
 .rotate__content1__container {
   font-weight: 600;
   overflow: hidden;
-  height: 80px;
+  height: auto;
   align-items: center;
   text-align: center;
   padding: 0 40px;
@@ -520,6 +519,38 @@ Animations
 
 
 .rotate__content1__container__text {
+  display: inline;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  margin: 0;
+}
+
+.rotate__content2 {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+
+.rotate__content2__container {
+  font-weight: 400;
+  overflow: hidden;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+
+.rotate__content2__container__text {
   display: inline;
   position: absolute;
   left: 50%;
