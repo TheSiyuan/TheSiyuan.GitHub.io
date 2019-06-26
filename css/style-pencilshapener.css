@@ -27,17 +27,18 @@ body {
   position: fixed;
   right: 0;
   bottom: 0;
+  top: 37px;
   min-width: 100%; 
   min-height: 100%;
 }
 
 .pencilsharpender__container {
-  position: absolute;
-  top: 40%;
+  position: fixed;
+  top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: auto;
+  height: 150px;
   overflow: visible;
   font-family: 'Lato', sans-serif;
   font-size: 20px;

@@ -18,13 +18,61 @@
 	-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-	
-	
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<!-- CSS reset-->
+	<link rel="stylesheet" href="css/reset.css">
 	
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	
+	<!-- iView Header files-->
+	<script type="text/javascript" src="iview/js/raphael-min.js"></script>
+	<script type="text/javascript" src="iview/js/jquery.easing.js"></script>
+	<script src="iview/js/iview.js"></script>
+
+	<link rel="stylesheet" href="iview/css/iview.css" />
+	<link rel="stylesheet" href="iview/css/skin 5/style_skin5.css" />
+	<script>
+		$(document).ready(function(){
+			$('#iview').iView({
+				strips: 20,
+				blockCols: 20,
+				blockRows: 3,
+				pauseTime: 7000,
+				pauseOnHover: true,
+				directionNavHoverOpacity: 0,
+				timer: "Bar",
+				timerDiameter: 120,
+				timerPadding: 3,
+				timerStroke: 4,
+				timerBarStroke: 0,
+				timerColor: "#0F0",
+				timerPosition: "bottom-right"
+			});
+			$('#iview2').iView({
+				pauseTime: 5000,
+				pauseOnHover: true,
+				directionNavHoverOpacity: 0,
+				controlNav: true,
+				controlNavNextPrev: false,
+				controlNavTooltip: false,
+				timer: "360Bar",
+				timerDiameter: 30,
+				timerPadding: 3,
+				timerStroke: 4,
+				timerBarStroke: 0,
+				timerColor: "#0F0",
+				timerPosition: "top-right"
+			});
+		});
+	</script>
+
+	<!-- iView Stop Here -->
+
 
 </head>
 <body class="diamond-transition">
@@ -37,6 +85,28 @@
 
 <div class="cd-modal" id="modal-1">
 	<div class="modal-content">
+			
+		<div id="iviewheader">
+			<div class="iviewnavcontainer">
+
+				<!-- Need to Fix This....-->
+				<h1><a href="index.html">Project: ByOthers </a></h1>
+				
+				<div id="iviewnav">
+					<ul>
+						<!--
+						<li><a href="index.html">Regular</a></li>
+						<li><a href="index2.html">Multiple</a></li>
+						<li><a href="index3.html">Regular with API</a></li>
+						<li><a href="index4.html">Responsive</a></li>
+						-->
+						<li><a href="pencilsharpener.html">Pencil Sharpener</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
 		<div>
 			<video autoplay muted loop id="myVideo">
 				<source src="video/Grey_203d_20Flourish_20background_20loop_20HD_20_SaveYouTube_com_.mp4" type="video/mp4">
@@ -48,6 +118,8 @@
 				</p>
 			</div>
 		</div>
+		
+
 		<div class="rotate__content">
 			
 			<div class="rotate__content__container">
@@ -70,13 +142,23 @@
 				</div>
 		</div>
 		
-		<div class="rotate__content2" id="pencilsharpener__redirection">
-			<div class="rotate__content2__container">	  
-				<p class=".rotate__content2__container__text ">✏️Pencil Sharpener</p>
+		
+		<!-- iView start from Here -->
+		
+		<div class="iviewcontainer__1">
+			<div id="iview" class="iview">
+				<div data-iview:image="iview/photos/728x90_1.jpg"></div>
+				<div data-iview:image="iview/photos/728x90_2.jpg"></div>
+				<div data-iview:image="iview/photos/728x90_3.jpg"></div>
+			</div>
 		</div>
+
+		<!-- iView stop at here -->
 		
 	</div>
 	</div> <!-- .modal-content -->
+
+
 
 	<a href="#0" class="modal-close">Close</a>
 </div> <!-- .cd-modal -->
@@ -85,14 +167,6 @@
 	<div class="bg-layer"></div>
 </div> <!-- .cd-transition-layer -->
 
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script>
-	if( !window.jQuery ) document.write('<script src="js/jquery-2.2.1-min.js"><\/script>');
-	    document.getElementById("pencilsharpener__redirection").onclick = function () {
-        location.href ="pencilshapener.html";
-    };
-</script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+
 </body>
 </html>
