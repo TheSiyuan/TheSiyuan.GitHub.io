@@ -20,6 +20,7 @@ body {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  z-index: 0;
 }
 
 a {
@@ -494,6 +495,7 @@ Animations
   top: 37px;
   min-width: 100%; 
   min-height: 100%;
+  z-index: 0;
 }
 
 .rotate__content1 {
