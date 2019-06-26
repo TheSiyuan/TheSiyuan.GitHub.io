@@ -302,7 +302,7 @@ ul {
 .fancy  li:nth-child(5),
 .fancy  li:nth-child(7),
 .fancy  li:nth-child(9){
-  background-color: #FF0000;
+  background-color: #999;
 }
 
 .fancy  li:nth-child(0),
@@ -310,10 +310,10 @@ ul {
 .fancy  li:nth-child(4),
 .fancy  li:nth-child(6),
 .fancy  li:nth-child(8) {
-  background-color: #FF0000;
+  background-color: #999;
 }
 .fancy  li:nth-child(10) {
-  background-color: #000000;
+  background-color: #999;
 }
 .fancy  li span {
   display: block;
