@@ -53,20 +53,20 @@ body {
 
 }
 @-webkit-keyframes p1fontcolor {
-  0%   {color: #fff748; }
-  25%  {color: #df678c; }
-  50%  {color: #8aaae5; }
-  75%  {color: #295f2d; }
-  100% {color: #fff748; }
+  0%   {color: #f0ecac; }
+  25%  {color: #db87a0; }
+  50%  {color: #9aafd4; }
+  75%  {color: #a2e2a7; }
+  100% {color: #f0ecac; }
 }
 
 /* Standard syntax */
 @keyframes p1fontcolor {
-  0%   {color: #fff748; }
-  25%  {color: #df678c; }
-  50%  {color: #8aaae5; }
-  75%  {color: #295f2d; }
-  100% {color: #fff748; }
+  0%   {color: #f0ecac; }
+  25%  {color: #db87a0; }
+  50%  {color: #9aafd4; }
+  75%  {color: #a2e2a7; }
+  100% {color: #f0ecac; }
 }
 .pencilsharpender__container__header {
   display: block;
