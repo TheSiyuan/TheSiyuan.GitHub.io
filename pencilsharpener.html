@@ -280,7 +280,7 @@
 	function buttonclick(){
 		document.getElementById("playFancy").removeEventListener("click", buttonclick);
 		multiplier = 1 - Math.pow(Math.random(),2);
-		multiplier = multiplier*10.5+90;
+		multiplier = multiplier*5.1+95;
 		multiplier = multiplier/100;
 		amount = parseInt(Number(document.getElementById("quoteamount").value)*multiplier);
 		amount = amount.toString()
