@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	
 	
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/index__style.css"> <!-- Resource style -->
 
 	<!-- donation and other shit-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
@@ -172,6 +172,102 @@
             </div>
 		</div>
 		<!-- Sponsor ship -->
+
+		<!--Arrow start here-->
+		<style>
+			.arrow__things > .arrow__content {
+			float: right;
+			width: 50%;
+			height: 500px;
+			-webkit-box-sizing: border-box; 
+			-moz-box-sizing: border-box;    
+			box-sizing: border-box;
+			transform:rotate(-135deg);
+			-webkit-transform:rotate(-135deg);
+			-moz-transform:rotate(-135deg);
+			-ms-transform: rotate(-135deg);
+			
+			position: fixed;
+			top:-247px;
+			right: -15%;
+			
+			}
+
+			.arrow__things > .arrow__content h1 {
+			font-family: 'Arial', sans-serif;
+			text-transform: uppercase;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			position: absolute;
+			height: 150px;
+			color: #89323B;
+			font-size: 20pt;
+			transform:rotate(135deg);
+			-webkit-transform:rotate(135deg);
+			-moz-transform:rotate(135deg);
+			-ms-transform: rotate(135deg);
+			}
+
+			/* Arrow */
+
+			.arrow__arrow {
+				position: relative;
+			margin: 0 auto;
+			width: 100px;
+			}
+
+			.arrow__arrow .arrow__curve {
+				border: 3px solid #fff;
+				border-color: transparent transparent transparent #fff;
+				height: 220px;
+				width: 1200px;
+				border-radius: 230px 0 0 150px;
+			}
+
+			.arrow__arrow .arrow__point {
+				position: absolute;
+				left: 25px;
+				top: 193px;
+			}
+
+			.arrow__arrow .arrow__point:before, .arrow__arrow .arrow__point:after {
+				border: 2px solid #fff;
+				height: 25px;
+				content: "";
+				position: absolute;
+			}
+
+			.arrow__arrow .arrow__point:before {
+				top: -13px;
+				left: -10px;
+				transform:rotate(-74deg);
+				-webkit-transform:rotate(-74deg);
+			-moz-transform:rotate(-74deg);
+			-ms-transform: rotate(-74deg);
+			}
+
+			.arrow__arrow .arrow__point:after {
+			top: -23px;
+				left: 1px;
+				transform:rotate(0deg);
+				-webkit-transform: rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-ms-transform: rotate(0deg);
+			}
+		</style>
+
+		<div class="arrow__things">
+			<div class="arrow__content">
+				<div class="arrow__arrow">
+				<div class="arrow__curve"></div>
+				<div class="arrow__point"></div>
+				</div>
+			</div> 
+		</div>
+		<!--Arrow stops here-->
 
 	</div>
 	</div> <!-- .modal-content -->
