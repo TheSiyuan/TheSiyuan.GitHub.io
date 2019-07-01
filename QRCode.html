@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142447352-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-142447352-1');
+	</script>
+
+	<title>QR Code</title>
+	<!--
+		Credit: Codrop
+	-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style-qrcode.css"> <!-- Resource style -->
+
+	<!-- donation and other shit-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/sponsorship.css" />
+	
+	<!-- iView Header files-->
+	<script type="text/javascript" src="iview/js/raphael-min.js"></script>
+	<script type="text/javascript" src="iview/js/jquery.easing.js"></script>
+	<script src="iview/js/iview.js"></script>
+
+	
+	<link rel="stylesheet" href="iview/css/iview.css" />
+	<link rel="stylesheet" href="iview/css/skin 5/style_skin5.css" />
+	<script>
+		$(document).ready(function(){
+			$('#iview').iView({
+				strips: 20,
+				blockCols: 20,
+				blockRows: 3,
+				pauseTime: 7000,
+				pauseOnHover: true,
+				directionNavHoverOpacity: 0,
+				timer: "Bar",
+				timerDiameter: 120,
+				timerPadding: 3,
+				timerStroke: 4,
+				timerBarStroke: 0,
+				timerColor: "#0F0",
+				timerPosition: "bottom-right"
+			});
+			$('#iview2').iView({
+				pauseTime: 5000,
+				pauseOnHover: true,
+				directionNavHoverOpacity: 0,
+				controlNav: true,
+				controlNavNextPrev: false,
+				controlNavTooltip: false,
+				timer: "360Bar",
+				timerDiameter: 30,
+				timerPadding: 3,
+				timerStroke: 4,
+				timerBarStroke: 0,
+				timerColor: "#0F0",
+				timerPosition: "top-right"
+			});
+		});
+	</script>
+
+	<!-- iView Stop Here -->
+	<!-- QR Code Script Start From Here -->
+	<script type="text/javascript" src="js/QRcode/qrcodegen.js"></script>
+	<!-- QR Code Script Start Ends Here -->
+
+
+</head>
+
+<body>
+		
+	
+<div id="iviewheader">
+	<div class="iviewnavcontainer">
+		<h1><a href="index.html" style="LINE-HEIGHT:20px">Project: ByOthers </a></h1>
+
+		<div id="iviewnav">
+			<ul>
+				<!--
+				<li><a href="index.html">Regular</a></li>
+				<li><a href="index2.html">Multiple</a></li>
+				<li><a href="index3.html">Regular with API</a></li>
+				<li><a href="index4.html">Responsive</a></li>
+				-->
+				<li class="active"><a href="pencilsharpener.html">Pencil Sharpener</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--
+<div> 
+	<video autoplay muted loop id="myVideo">
+		<source src="video/Grey_203d_20Flourish_20background_20loop_20HD_20_SaveYouTube_com_.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+</div>
+-->
+
+
+<div> <!-- input of dollar value for scope of work -->
+	
+	<h2>
+		Outlook Contact QR Code Generator
+	</h2>
+	<p>You can fill in the info below to generate your QR Code</p>
+	
+	<form action="#" method="get" onsubmit="return false;">
+		<table class="noborder">
+			<tr>
+			  <td>
+					<strong>Contact Name</strong>
+				</td>
+			  <td>
+					<input type="text" name="lname" id="contactname" value="Firstname Lastname">
+			  </td>
+			</tr>
+			<tr>
+				<td>
+					<strong>Email</strong>
+				</td>
+				<td>
+					<input type="text" name="lname" id="contactemail" value="example@byothers.ca">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong>Company/Orgnization</strong>
+				</td>
+				<td>
+					<input type="text" name="lname" id="contactcompany" value="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong>Address</strong>
+				</td>
+				<td>
+					<textarea placeholder="Address here, along with Postal Code" id="contactaddress" style="width:100%; max-width:30em; height:5em; font-family:inherit"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong>Phone # - Work</strong>
+				</td>
+				<td>
+					<input type="text" name="lname" id="contactphone1" value="Firstname Lastname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong>Contact Name</strong>
+				</td>
+				<td>
+					<input type="text" name="lname" id="contactname" value="Firstname Lastname">
+				</td>
+			</tr>
+			<tr>
+				<td><strong>QR Code:</strong></td>
+				<td>
+					<canvas id="qrcode-canvas" style="padding:1em; background-color:#E8E8E8"></canvas>
+				</td>
+			</tr>
+		  </table>
+	</form>
+</div>
+
+<!-- QR Code Script Start From Here -->
+
+
+
+<!-- QR Code Script Start Ends Here -->
+
+<!-- iView start from Here -->
+
+<div class="iviewcontainer__1">
+	<div id="iview" class="iview">
+		<div data-iview:image="iview/photos/728x90_1.jpg"></div>
+		<div data-iview:image="iview/photos/728x90_2.jpg"></div>
+		<div data-iview:image="iview/photos/728x90_3.jpg"></div>
+	</div>
+</div>
+
+<!-- iView stop at here -->
+
+<!-- sponsor ship-->
+<div class="socials">
+	<div>
+		<a href="https://www.patreon.com/TheSiyuan" >
+			<div class="tooltip">
+				<i class="fa fa-patreon" style="font-size:24px;color:white"></i>
+				<span class="tooltiptext">Patreon</span>
+			</div>
+		</a>
+	</div>
+	<div>
+		<a href="https://github.com/TheSiyuan" >
+			<div class="tooltip">
+				<i class="fa fa-github" style="font-size:24px;color:white"></i>
+				<span class="tooltiptext">GitHub</span>
+			</div>
+		</a>
+	</div>
+</div>
+<!-- Sponsor shit -->
+
+
+ 
+
+
+</body>
+</html>
