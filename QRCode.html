@@ -13,7 +13,8 @@
 
 	<title>QR Code</title>
 	<!--
-		Credit: Codrop
+		Credit: Project Nayuki. (MIT License)
+ 		https://www.nayuki.io/page/qr-code-generator-library
 	-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -73,6 +74,7 @@
 	<!-- iView Stop Here -->
 	<!-- QR Code Script Start From Here -->
 	<script type="text/javascript" src="js/QRcode/qrcodegen.js"></script>
+
 	<!-- QR Code Script Start Ends Here -->
 
 
@@ -91,93 +93,166 @@
 				<li><a href="index.html">Regular</a></li>
 				<li><a href="index2.html">Multiple</a></li>
 				<li><a href="index3.html">Regular with API</a></li>
-				<li><a href="index4.html">Responsive</a></li>
 				-->
-				<li class="active"><a href="pencilsharpener.html">Pencil Sharpener</a></li>
+				<li><a href="pencilsharpener.html">Pencil Sharpener</a></li>
+				<li class="active"><a href="QRCode.html">QR Code</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<!--
+
 <div> 
 	<video autoplay muted loop id="myVideo">
 		<source src="video/Grey_203d_20Flourish_20background_20loop_20HD_20_SaveYouTube_com_.mp4" type="video/mp4">
 		Your browser does not support HTML5 video.
 	</video>
 </div>
--->
 
+<div class="qrcode__container">
+	<div class="qrcode__container__container">
+		<h2>
+			Outlook Contact QR Code Generator
+		</h2>
+		<p>You can fill in the info below to generate your QR Code</p>
+	
+		<form action="#" method="get" onsubmit="return false;">
+			<table class="noborder">
+				<tr>
+				<td>
+						<strong>Contact Name</strong>
+					</td>
+				<td>
+						<input type="text" name="contactname" id="contactname" value="Firstname Lastname" style="width:14em">
+				</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Email</strong>
+					</td>
+					<td>
+						<input type="text" name="contactemail" id="contactemail" value="example@byothers.ca" style="width:14em">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Company/Orgnization</strong>
+					</td>
+					<td>
+						<input type="text" name="contactcompany" id="contactcompany" value="" style="width:14em">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Position/Title</strong>
+					</td>
+					<td>
+						<input type="text" name="title" id="title" value="" style="width:14em">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Address</strong>
+					</td>
+					<td>
+						<textarea placeholder="Address here, along with Postal Code" name="contactaddress" id="contactaddress" style="width:100%; height:4em; font-family:inherit"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Phone # - Work</strong>
+					</td>
+					<td>
+						<input type="text" name="workphone" id="workphone" value="7801234567" style="width:14em">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Phone # - Mobile</strong>
+					</td>
+					<td>
+						<input type="text" name="cellphone" id="cellphone" value="7801234567" style="width:14em">
+					</td>
+				</tr>
+				<tr>
+					<td><strong>QR Code:</strong></td>
+					<td>
+						<canvas id="qrcode-canvas" style="padding:1em; background-color:#E8E8E8"></canvas>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div class="qrcode__reader__container__container ">
+		<h2>
+			Outlook Contact QR Code Decoder Add-in
+		</h2>
+		<p>Download the installer from link below:</p>
 
-<div> <!-- input of dollar value for scope of work -->
-	
-	<h2>
-		Outlook Contact QR Code Generator
-	</h2>
-	<p>You can fill in the info below to generate your QR Code</p>
-	
-	<form action="#" method="get" onsubmit="return false;">
-		<table class="noborder">
-			<tr>
-			  <td>
-					<strong>Contact Name</strong>
-				</td>
-			  <td>
-					<input type="text" name="lname" id="contactname" value="Firstname Lastname">
-			  </td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Email</strong>
-				</td>
-				<td>
-					<input type="text" name="lname" id="contactemail" value="example@byothers.ca">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Company/Orgnization</strong>
-				</td>
-				<td>
-					<input type="text" name="lname" id="contactcompany" value="">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Address</strong>
-				</td>
-				<td>
-					<textarea placeholder="Address here, along with Postal Code" id="contactaddress" style="width:100%; max-width:30em; height:5em; font-family:inherit"></textarea>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Phone # - Work</strong>
-				</td>
-				<td>
-					<input type="text" name="lname" id="contactphone1" value="Firstname Lastname">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Contact Name</strong>
-				</td>
-				<td>
-					<input type="text" name="lname" id="contactname" value="Firstname Lastname">
-				</td>
-			</tr>
-			<tr>
-				<td><strong>QR Code:</strong></td>
-				<td>
-					<canvas id="qrcode-canvas" style="padding:1em; background-color:#E8E8E8"></canvas>
-				</td>
-			</tr>
-		  </table>
-	</form>
+	</div>
 </div>
 
 <!-- QR Code Script Start From Here -->
+<script>
+var app = new function() {
 
+function initialize() {
+	var elems = document.querySelectorAll("input[type=text], textarea");
+	for (var i = 0; i < elems.length; i++) {
+		if (elems[i].id.indexOf("version-") != 0)
+			elems[i].oninput = redrawQrCode;
+	}
+	elems = document.querySelectorAll("input[type=radio], input[type=checkbox]");
+	for (var i = 0; i < elems.length; i++)
+		elems[i].onchange = redrawQrCode;
+	redrawQrCode();
+}
+
+function redrawQrCode() {
+	// Show/hide rows based on bitmap/vector image output
+	//var bitmapOutput = true;
+	//combine all text together to V-Card format
+	var input_text = 
+		"BEGIN:VCARD\nPROFILE:VCARD\nVERSION:3.0\nMAILER:Microsoft Exchange\nPRODID:Microsoft Exchange"
+		+"\nFN:"+document.getElementById("contactname").value
+		+"\nEMAIL;TYPE=INTERNET:"+ document.getElementById("contactemail").value
+		+"\nORG:"+document.getElementById("contactcompany").value +";"
+		+"\nCLASS:PUBLIC"
+		+"\nADR;TYPE=WORK,PREF:;;;"+document.getElementById("contactaddress").value
+		+"\nTEL;TYPE=CELL:"+document.getElementById("cellphone").value
+		+"\nTITLE:"+document.getElementById("title").value
+		+"\nX-MS-IMADDRESS:"
+		+"\nEND:VCARD";
+
+	// Reset output images in case of early termination
+	var canvas = document.getElementById("qrcode-canvas");
+	//canvas.style.display = "none";
+	// Returns a QrCode.Ecc object based on the radio buttons in the HTML form.
+
+	
+	var ecl = qrcodegen.QrCode.Ecc.HIGH; //preset to high
+	var segs = qrcodegen.QrSegment.makeSegments(input_text); //convert text to segment
+	var minVer = 1;//preset to 1
+	var maxVer = 40;//preset to 40
+	var mask = -1;//preset to auto (-1)
+	var boostEcc = true; //Error Correction level boost
+	var qr = qrcodegen.QrCode.encodeSegments(segs, ecl, minVer, maxVer, mask, boostEcc);
+	// Draw image output
+	var border = 4;//Preset to 4
+	//bitmap output
+	var scale = 2;//preset to 2 pixal per module
+	// Get form inputs and compute QR Code
+	
+	// Draw image output
+
+	qr.drawCanvas(scale, border, canvas);
+	canvas.style.removeProperty("display");
+}
+
+initialize();
+}
+
+</script>
 
 
 <!-- QR Code Script Start Ends Here -->

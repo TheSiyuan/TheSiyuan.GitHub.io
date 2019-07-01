@@ -19,10 +19,39 @@ body {
 
 #myVideo {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  top: 37px;
+  right: 0%;
+  bottom: 0%;
+  top: 0%;
   min-width: 100%; 
   min-height: 100%;
+  z-index: -1;
 }
 
+.qrcode__container {
+  position: fixed;
+  top: 37px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: visible;
+  width: 900px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ecf0f1;
+}
+.qrcode__container__container {
+  position: absolute;
+  top:10px;
+  left: 50px;
+  width: 450px;
+}
+.qrcode__reader__container__container {
+  position: absolute;
+  top: 10px;
+  left: 500px;
+  overflow: visible;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ecf0f1;
+  width: 450px;
+}
