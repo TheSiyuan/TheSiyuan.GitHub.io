@@ -42,13 +42,14 @@ body {
 .qrcode__container__container {
   position: absolute;
   top:10px;
-  left: 50px;
-  width: 450px;
+  left: 0px;
+  width: 500px;
+  border-right: 3px solid;
 }
 .qrcode__reader__container__container {
   position: absolute;
   top: 10px;
-  left: 500px;
+  left: 600px;
   overflow: visible;
   font-size: 16px;
   line-height: 26px;
