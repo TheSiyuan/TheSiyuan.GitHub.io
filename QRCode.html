@@ -123,7 +123,8 @@
 						<strong>Contact Name</strong>
 					</td>
 				<td>
-						<input type="text" name="contactname" id="contactname" value="Firstname Lastname" style="width:14em">
+						<input type="text" name="firstname" id="firstname" value="Firstname" style="width:6em">
+						<input type="text" name="lastname" id="lastname" value="Lastname" style="width:6em">
 				</td>
 				</tr>
 				<tr>
@@ -213,16 +214,15 @@ function redrawQrCode() {
 	//var bitmapOutput = true;
 	//combine all text together to V-Card format
 	var input_text = 
-		"BEGIN:VCARD\nPROFILE:VCARD\nVERSION:3.0\nMAILER:Microsoft Exchange\nPRODID:Microsoft Exchange"
-		+"\nFN:"+document.getElementById("contactname").value
+		"BEGIN:VCARD\nPROFILE:VCARD\nVERSION:4.0"
+		+"\nN:"+document.getElementById("lastname").value + ";" + document.getElementById("firstname").value+";;;"
+		+"\nFN:"+document.getElementById("firstname").value + " " + document.getElementById("lastname").value
 		+"\nEMAIL;TYPE=INTERNET:"+ document.getElementById("contactemail").value
-		+"\nORG:"+document.getElementById("contactcompany").value +";"
-		+"\nCLASS:PUBLIC"
+		+"\nORG:"+document.getElementById("contactcompany").value
 		+"\nADR;TYPE=WORK,PREF:;;;"+document.getElementById("contactaddress").value
 		+"\nTEL;TYPE=CELL:"+document.getElementById("cellphone").value
 		+"\nTEL;TYPE=WORK:"+document.getElementById("workphone").value
 		+"\nTITLE:"+document.getElementById("title").value
-		+"\nX-MS-IMADDRESS:"
 		+"\nEND:VCARD";
 
 	// Reset output images in case of early termination
