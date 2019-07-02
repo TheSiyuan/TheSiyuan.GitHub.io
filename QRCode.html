@@ -230,7 +230,7 @@ function redrawQrCode() {
 	// Returns a QrCode.Ecc object based on the radio buttons in the HTML form.
 
 	
-	var ecl = qrcodegen.QrCode.Ecc.HIGH; //preset to high
+	var ecl = qrcodegen.QrCode.Ecc.LOW; //preset to high
 	var segs = qrcodegen.QrSegment.makeSegments(input_text); //convert text to segment
 	var minVer = 1;//preset to 1
 	var maxVer = 40;//preset to 40
@@ -240,7 +240,7 @@ function redrawQrCode() {
 	// Draw image output
 	var border = 4;//Preset to 4
 	//bitmap output
-	var scale = 2;//preset to 2 pixal per module
+	var scale = 4;//preset to 2 pixal per module
 	// Get form inputs and compute QR Code
 	
 	// Draw image output
