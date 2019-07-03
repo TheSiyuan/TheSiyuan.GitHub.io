@@ -176,6 +176,15 @@
 					</td>
 				</tr>
 				<tr>
+					<td>
+						<strong>Your Icon - </strong>
+					</td>
+					<td>
+						<input type='file' onchange="readURL(this);" />
+						<img id="youricon" alt="your image" src="http://www.w3.org/html/logo/img/mark-word-icon.png" style="display: none"/>
+					</td>
+				</tr>
+				<tr>
 					<td><strong>QR Code:</strong></td>
 					<td>
 						<canvas id="qrcode-canvas" style="padding:1em; background-color:#E8E8E8"></canvas>
@@ -190,7 +199,6 @@
 		</h2>
 		<p>Download the installer from link below:</p>
 		<p>Coming soon ...</p>
-		<img id="html5" src="http://www.w3.org/html/logo/img/mark-word-icon.png" />
 	</div>
 </div>
 
@@ -249,28 +257,37 @@ function redrawQrCode() {
 
 	qr.drawCanvas(scale, border, canvas);
 	canvas.style.removeProperty("display");
-	var image  = document.getElementById("html5");
-    var context = canvas.getContext("2d");
-    context.drawImage(image, canvas.width/2-25, canvas.height/2-25, 48, 48);
+	addinicon();
 }
 
 initialize();
 }
 
+function addinicon(){
+	var image  = document.getElementById("youricon");
+	var canvas = document.getElementById("qrcode-canvas");
+    var context = canvas.getContext("2d");
+    context.drawImage(image, canvas.width/2-25, canvas.height/2-25, 44, 44);
+}
+
 window.addEventListener("DOMContentLoaded", function()
 {
-    var image  = document.getElementById("html5");
-    //var canvas = document.createElement("canvas");
-	var canvas = document.getElementById("qrcode-canvas");
-    //document.body.appendChild(canvas);
-
-    //canvas.width  = image.width;
-    //canvas.height = image.height;
-
-    var context = canvas.getContext("2d");
-
-    context.drawImage(image, canvas.width/2-25, canvas.height/2-25, 48, 48);
+    addinicon();
 });
+
+function readURL(input) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+
+		reader.onload = function (e) {
+			$('#youricon')
+				.attr('src', e.target.result)
+		};
+
+		reader.readAsDataURL(input.files[0]);
+	}
+	addinicon();
+}
 
 </script>
 
