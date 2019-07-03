@@ -119,13 +119,22 @@
 		<form action="#" method="get" onsubmit="return false;">
 			<table class="noborder">
 				<tr>
-				<td>
+					<td>
+						<strong>Your Icon - </strong>
+					</td>
+					<td>
+						<input type='file' onchange="readURL(this);" />
+						<img id="youricon" alt="your image" src="http://www.w3.org/html/logo/img/mark-word-icon.png" style="display: none"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
 						<strong>Contact Name</strong>
 					</td>
-				<td>
+					<td>
 						<input type="text" name="firstname" id="firstname" value="Firstname" style="width:7em">
 						<input type="text" name="lastname" id="lastname" value="Lastname" style="width:7em">
-				</td>
+					</td>
 				</tr>
 				<tr>
 					<td>
@@ -173,15 +182,6 @@
 					</td>
 					<td>
 						<input type="text" name="cellphone" id="cellphone" value="7801234567" style="width:15em">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<strong>Your Icon - </strong>
-					</td>
-					<td>
-						<input type='file' onchange="readURL(this);" />
-						<img id="youricon" alt="your image" src="http://www.w3.org/html/logo/img/mark-word-icon.png" style="display: none"/>
 					</td>
 				</tr>
 				<tr>
