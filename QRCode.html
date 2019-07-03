@@ -124,7 +124,7 @@
 					</td>
 					<td>
 						<input type='file' onchange="readURL(this);" />
-						<img id="youricon" alt="your image" src="http://www.w3.org/html/logo/img/mark-word-icon.png" style="display: none"/>
+						<img id="youricon" alt="your image" src="#" style="display: none"/>
 					</td>
 				</tr>
 				<tr>
@@ -267,7 +267,7 @@ function addinicon(){
 	var image  = document.getElementById("youricon");
 	var canvas = document.getElementById("qrcode-canvas");
     var context = canvas.getContext("2d");
-    context.drawImage(image, canvas.width/2-25, canvas.height/2-25, 44, 44);
+    context.drawImage(image, canvas.width/2-22, canvas.height/2-22, 44, 44);
 }
 
 window.addEventListener("DOMContentLoaded", function()
