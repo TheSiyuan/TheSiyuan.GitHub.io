@@ -71,25 +71,39 @@ namespace Outlook_QR_Reader
         {
             //triggers QR Reader once hook applied
             Bitmap bmp = null;
+            string vcard__content;
             int width = 300;
             int height = 300;
             Outlook.ContactItem contact;
-            Outlook.Application app = Globals.ThisAddIn.exampleGetApplication();
+            Outlook.Application app = Globals.ThisAddIn.getapplication();
             try
             {
                 bmp = CaptureImage(Cursor.Position.X - width / 2, Cursor.Position.Y - height / 2, width, height);
+                Unsubscribe(); // unmount the hook, so future click won't trigger the reader
                 string temppath__vcard = Path.GetTempPath();
-                temppath__vcard += "tempvcard.vcf";
-                File.WriteAllText(temppath__vcard, CodeDecoder(bmp));
-                bmp.Dispose();
-                Unsubscribe();
-                //MessageBox.Show(temppath__vcard);
-                contact = app.Session.OpenSharedItem(temppath__vcard);
-                contact.Display();
+                temppath__vcard += "tempvcard.vcf"; //save vcard as temp file
+                vcard__content = CodeDecoder(bmp);
+                if (isitvcard(vcard__content))
+                {
+                    File.WriteAllText(temppath__vcard, vcard__content);
+                    bmp.Dispose();
+                    Unsubscribe();
+                    //MessageBox.Show(temppath__vcard);
+                    contact = app.Session.OpenSharedItem(temppath__vcard);
+                    contact.Display();
+                }
+                else
+                {
+                    string errormessage = "QR Code Reads:\n" + vcard__content + "\nNot Valid vCard Format.\nMaybe try again?";
+                    MessageBox.Show(errormessage, "Not vCard", MessageBoxButtons.OK);
+                }
             }
             catch (Exception ex)
             {
-                //nothing happens here
+                //catches the situation when no qr code was picked up.
+                //where qr code was successfully read but not vcard is being handled by
+                // public isitvcard()...
+                noqrcode__err__handler();
             }
             Unsubscribe();
         }
@@ -100,5 +114,15 @@ namespace Outlook_QR_Reader
             m_GlobalHook.Dispose();
         }
 
+        public void noqrcode__err__handler()
+        {
+            MessageBox.Show("Appears No QR Code in This Area, try again?", "No QR Code", MessageBoxButtons.OK, MessageBoxIcon.Question );
+
+        }
+        public bool isitvcard(string testsubject)
+        {
+            bool isitvcard = Equals(testsubject.Substring(0, 11), "BEGIN:VCARD");
+            return isitvcard;
+        }
     }
 }

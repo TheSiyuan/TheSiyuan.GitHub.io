@@ -51,15 +51,16 @@
             // group1
             // 
             this.group1.Items.Add(this.QRReader_BTN);
-            this.group1.Label = "group1";
+            this.group1.Label = "QR Code";
             this.group1.Name = "group1";
             // 
             // QRReader_BTN
             // 
             this.QRReader_BTN.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.QRReader_BTN.Image = global::Outlook_QR_Reader.Properties.Resources.scan_qr;
+            this.QRReader_BTN.Image = global::Outlook_QR_Reader.Properties.Resources.qr_scan;
             this.QRReader_BTN.Label = "QR Reader";
             this.QRReader_BTN.Name = "QRReader_BTN";
+            this.QRReader_BTN.ScreenTip = "Click then click the QR code";
             this.QRReader_BTN.ShowImage = true;
             this.QRReader_BTN.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.QRReader_BTN_Click);
             // 

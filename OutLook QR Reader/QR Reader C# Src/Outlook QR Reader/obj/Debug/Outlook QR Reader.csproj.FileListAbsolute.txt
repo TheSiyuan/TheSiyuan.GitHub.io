@@ -14,10 +14,6 @@ E:\VS Project\GitHub\QR Code Things\Outlook QR Reader\Outlook QR Reader\obj\Debu
 E:\VS Project\GitHub\QR Code Things\Outlook QR Reader\Outlook QR Reader\obj\Debug\Outlook QR Reader.csproj.CopyComplete
 E:\VS Project\GitHub\QR Code Things\Outlook QR Reader\Outlook QR Reader\obj\Debug\Outlook QR Reader.dll
 E:\VS Project\GitHub\QR Code Things\Outlook QR Reader\Outlook QR Reader\obj\Debug\Outlook QR Reader.pdb
-E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader.dll
-E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader.pdb
-E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader.dll.manifest
-E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader.vsto
 E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Gma.System.MouseKeyHook.dll
 E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
 E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
@@ -27,5 +23,9 @@ E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outl
 E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\obj\Debug\Outlook QR Reader.csproj.GenerateResource.cache
 E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\obj\Debug\Outlook QR Reader.csproj.CoreCompileInputs.cache
 E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\obj\Debug\Outlook QR Reader.csproj.CopyComplete
-E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\obj\Debug\Outlook QR Reader.dll
-E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\obj\Debug\Outlook QR Reader.pdb
+E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader - Project ByOthers.dll
+E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader - Project ByOthers.pdb
+E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader - Project ByOthers.dll.manifest
+E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\bin\Debug\Outlook QR Reader - Project ByOthers.vsto
+E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\obj\Debug\Outlook QR Reader - Project ByOthers.dll
+E:\VS Project\GitHub\TheSiyuan.GitHub.io\OutLook QR Reader\QR Reader C# Src\Outlook QR Reader\obj\Debug\Outlook QR Reader - Project ByOthers.pdb

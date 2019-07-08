@@ -30,10 +30,10 @@ namespace Outlook_QR_Reader
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
             // Note: Outlook no longer raises this event. If you have code that 
-            //    must run when Outlook shuts down, see https://go.microsoft.com/fwlink/?LinkId=506785
+            // must run when Outlook shuts down, see https://go.microsoft.com/fwlink/?LinkId=506785
         }
 
-        public Outlook.Application exampleGetApplication()
+        public Outlook.Application getapplication()
         {
             Outlook.Application application = this.Application;
             return application;
