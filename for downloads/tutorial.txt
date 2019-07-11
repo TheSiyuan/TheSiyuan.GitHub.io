@@ -1,7 +1,0 @@
-1. Once downloaded, unzip the file, double click "Outlook QR Reader - Project ByOthers.vsto" to install. The installer is ".vsto" file, thus you don't need Administrator Access to install.
-2. Once installed, a tab(ribbon) called "ByOthers" will show up on your Outlook, click "QR Reader" then click on a QR Code to read.
-3. If the QR Code contains valid vCard information, your outlook will display a new contact window, click "Save" to save the contact.
-4. To uninstall, use Windows Standard Add/Remove Programs.
-5. For any security concerns that might come from anyone, please contact me (wsyuan@yeah.net) to get a copy of the source code for analysis.
-
-Enjoy!
