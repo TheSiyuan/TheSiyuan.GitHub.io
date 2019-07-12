@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/testpage.js"></script>
+    <script>
+    
+    function myFunction() {
+      document.getElementById("demo").innerHTML = heading;
+      document.getElementById("demo").style.fontSize = "40px";
+    }
+    function loadDoc() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("demo1").innerHTML = this.responseText;
+            }
+          };
+          xhttp.open("GET", "userdefine/testpage.txt", true);
+          xhttp.send();
+        }
+    </script>
+    
+</head>
+<body>
+
+<p>This example demonstrates how to assign an "onload" event to an iframe element.</p>
+
+<iframe onload="myFunction()" src="/default.asp"></iframe>
+
+<p id="demo" style="font-size: 15px"></p>
+<div id="demo1">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+
+</body>
+</html>
