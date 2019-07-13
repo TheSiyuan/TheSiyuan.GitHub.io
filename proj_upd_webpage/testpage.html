@@ -16,7 +16,7 @@
 <button type="button" onclick="loadDoc()">Change Content</button>
 </div>
 <div>
-  <h2 id="TITLE">header for title</h2> 
+  <h2 id="TITLE1">header for title</h2> 
 </div>
 
 <script src="js/testpage.js"></script>
@@ -42,7 +42,7 @@
       var xmlDoc = xml.responseXML;
       var x = xmlDoc.getElementsByTagName("TITLE");
 
-      document.getElementById("TITLE").innerHTML = x.nodeValue;
+      document.getElementById("TITLE1").innerHTML = x.nodeValue;
     }
     </script>
 
