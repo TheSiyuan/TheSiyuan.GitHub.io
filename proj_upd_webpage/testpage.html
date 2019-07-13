@@ -21,7 +21,7 @@
     }
     function anotherfunction(xml){
       var xmlDoc = xml.responseXML;
-      var x = xmlDoc.getElementByTagName("TITLE");
+      var x = xmlDoc.getElementsByTagName("TITLE");
 
       document.getElementById("TITLE").innerHTML = x[0].nodeValue;
     }
