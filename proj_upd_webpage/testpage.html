@@ -40,7 +40,7 @@
     function anotherfunction(xml){
       var xmlDoc = xml.responseXML;
       var x = xmlDoc.getElementsByTagName("NAMEq");
-      var y = x.childNode.nodeValue;
+      var y = x.childNodes.nodeValue;
       document.getElementById("TITLE1").innerHTML = y;
     }
     </script>
