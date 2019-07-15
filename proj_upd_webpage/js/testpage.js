@@ -1,8 +1,5 @@
 //test function for javascript code
 var heading = "this is the new heading";
-
-console.log(heading);
-
 function myFunction() {
 document.getElementById("demo").innerHTML = heading;
 document.getElementById("demo").style.fontSize = "40px";
