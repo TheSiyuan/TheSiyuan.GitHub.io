@@ -148,7 +148,7 @@ h6 {
 
 #header #logo h1 {
   font-size: 34px;
-  margin: 0;
+  margin: 0px 0px;
   padding: 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
@@ -224,19 +224,23 @@ h6 {
 }
 
 #intro .carousel-content {
-  text-align: center;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  padding: 10px;
 }
 
 #intro h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
 }
 
 #intro p {
   width: 80%;
-  margin: 0 auto 30px auto;
+  margin: 0 0px 30px auto;
   color: #fff;
 }
 
@@ -597,43 +601,43 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f7f7f7;
 }
 
-/* Featured Services Section
+/* Featured stats Section
 --------------------------------*/
 
-#featured-services {
+#featured-stats {
   background: #000;
 }
 
-#featured-services .box {
+#featured-stats .box {
   padding: 30px 20px;
 }
 
-#featured-services .box-bg {
+#featured-stats .box-bg {
   background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
 }
 
-#featured-services i {
+#featured-stats i {
   color: #18d26e;
   font-size: 48px;
   display: inline-block;
   line-height: 1;
 }
 
-#featured-services h4 {
+#featured-stats h4 {
   font-weight: 400;
   margin: 15px 0;
   font-size: 18px;
 }
 
-#featured-services h4 a {
+#featured-stats h4 a {
   color: #fff;
 }
 
-#featured-services h4 a:hover {
+#featured-stats h4 a:hover {
   color: #18d26e;
 }
 
-#featured-services p {
+#featured-stats p {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
@@ -736,7 +740,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
-/* Services Section
+/* stats Section
 --------------------------------*/
 
 #stats {
@@ -824,16 +828,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 
-#skills {
+#progresses {
   padding: 60px 0;
 }
 
-#skills .progress {
+#progresses .progress {
   height: 35px;
   margin-bottom: 10px;
 }
 
-#skills .progress .skill {
+#progresses .progress .scope {
   font-family: "Open Sans", sans-serif;
   line-height: 35px;
   padding: 0;
@@ -841,13 +845,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-#skills .progress .skill .val {
+#progresses .progress .scope .val {
   float: right;
   font-style: normal;
   margin: 0 20px 0 0;
 }
 
-#skills .progress-bar {
+#progresses .progress-bar {
   width: 1px;
   text-align: left;
   transition: .9s;
@@ -1542,7 +1546,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #intro p {
-    width: 60%;
+    width: 80%;
   }
 
   #intro .carousel-control-prev,
