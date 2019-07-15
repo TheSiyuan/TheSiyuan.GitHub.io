@@ -21,7 +21,6 @@ xhttp.send();
 function anotherfunction(xml){
 var xmlDoc = xml.responseXML;
 var x = xmlDoc.getElementsByTagName("NAME");
-//var y = x[0].childNodes[0].nodeValue;
-var y = x.text;
+var y = x[0].childNodes[0].nodeValue;
 document.getElementById("TITLE1").innerHTML = y;
 }
