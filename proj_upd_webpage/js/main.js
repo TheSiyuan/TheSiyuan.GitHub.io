@@ -8,7 +8,7 @@
         $(this).remove();
       });
     }
-    //loadDoc(); //Pull User Defined Content to the page
+    loadDoc(); //Pull User Defined Content to the page
   });
 
   // Back to top button
