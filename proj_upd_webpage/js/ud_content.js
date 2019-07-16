@@ -8,15 +8,16 @@ function loadDoc() {
     };
     xhttp.open("GET", "userdefine/samplepage.xml", true);
     xhttp.send();
-    }
-    function anotherfunction(xml){
+}
+
+function anotherfunction(xml){
     var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName("ud_proj_name");
-    document.getElementById("ud_proj_name").innerHTML = x[0].childNodes[0].nodeValue;
-    document.getElementById("ud_proj_name_page").innerHTML = x[0].childNodes[0].nodeValue;       
-
-
-
-
-
+    var x;
+    var i;
+    var y;
+    y = document.querySelectorAll('[id^="ud_"]');
+    for (i=0; i<y.length; i++) {
+        x = xmlDoc.getElementsByTagName(y[i].id);
+        document.getElementById(y[i].id).innerHTML =x[0].childNodes[0].nodeValue;
     }
+}
