@@ -11,6 +11,12 @@ function loadDoc() {
     }
     function anotherfunction(xml){
     var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName("NAME");
-    document.getElementById("TITLE1").innerHTML = x[0].childNodes[0].nodeValue;
+    var x = xmlDoc.getElementsByTagName("ud_proj_name");
+    document.getElementById("ud_proj_name").innerHTML = x[0].childNodes[0].nodeValue;
+        
+
+
+
+
+
     }
