@@ -6,8 +6,8 @@
 <COMPANY>Columbia</COMPANY>
 <PRICE>10.90</PRICE>
 <YEAR>1985</YEAR>
-<TITLE1>TITLE1</TITLE1>
-<TITLE2>TITLE2</TITLE2>
-<TITLE3>TITLE3</TITLE3>
-<TITLE4>TITLE4</TITLE4>
+<title1>title1</title1>
+<title2>title2</title2>
+<title3>title3</title3>
+<title4>title4</title4>
 </CD>

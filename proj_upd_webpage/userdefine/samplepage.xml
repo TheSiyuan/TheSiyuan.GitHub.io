@@ -6,23 +6,23 @@
 <ud_intro_desc_2>Picture 2 Desc</ud_intro_desc_2>
 <ud_intro_heading_3>Picture 3</ud_intro_heading_3>
 <ud_intro_desc_3>Picture 3 Desc</ud_intro_desc_3>
-<ud_gc_name>	</ud_gc_name>
-<ud_client_name>	</ud_client_name>
-<ud_designer_name>	</ud_designer_name>
-<ud_teammember_1>	</ud_teammember_1>
-<ud_teammember_desc_1>	</ud_teammember_desc_1>
-<ud_teammember_2>	</ud_teammember_2>
-<ud_teammember_desc_2>	</ud_teammember_desc_2>
-<ud_teammember_3>	</ud_teammember_3>
-<ud_teammember_desc_3>	</ud_teammember_desc_3>
-<ud_teammember_4>	</ud_teammember_4>
-<ud_teammember_desc_4>	</ud_teammember_desc_4>
-<ud_milestone_name_1>	</ud_milestone_name_1>
-<ud_milestone_desc_1>	</ud_milestone_desc_1>
-<ud_milestone_name_2>	</ud_milestone_name_2>
-<ud_milestone_desc_2>	</ud_milestone_desc_2>
-<ud_milestone_name_3>	</ud_milestone_name_3>
-<ud_milestone_desc_3>	</ud_milestone_desc_3>
+<ud_gc_name>ByOthers</ud_gc_name>
+<ud_client_name>ByOthers</ud_client_name>
+<ud_designer_name>ByOthers</ud_designer_name>
+<ud_teammember_1>Member 1</ud_teammember_1>
+<ud_teammember_desc_1>Member 1 Desc</ud_teammember_desc_1>
+<ud_teammember_2>Member 2</ud_teammember_2>
+<ud_teammember_desc_2>Member 2 Desc</ud_teammember_desc_2>
+<ud_teammember_3>Member 3</ud_teammember_3>
+<ud_teammember_desc_3>Member 3 Desc</ud_teammember_desc_3>
+<ud_teammember_4>Member 4</ud_teammember_4>
+<ud_teammember_desc_4>Member 4 Desc</ud_teammember_desc_4>
+<ud_milestone_name_1>Milestone 1</ud_milestone_name_1>
+<ud_milestone_desc_1>Milestone 1 Desc</ud_milestone_desc_1>
+<ud_milestone_name_2>Milestone 2</ud_milestone_name_2>
+<ud_milestone_desc_2>Milestone 2 Desc</ud_milestone_desc_2>
+<ud_milestone_name_3>Milestone 3</ud_milestone_name_3>
+<ud_milestone_desc_3>Milestone 3 Desc</ud_milestone_desc_3>
 <ud_scope_1>	</ud_scope_1>
 <ud_scope_value_1>	</ud_scope_value_1>
 <ud_scope_2>	</ud_scope_2>
