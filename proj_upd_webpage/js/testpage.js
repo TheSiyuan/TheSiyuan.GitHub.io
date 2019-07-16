@@ -18,6 +18,8 @@ xhttp.send();
 function anotherfunction(xml){
 var xmlDoc = xml.responseXML;
 var x = xmlDoc.getElementsByTagName("NAME");
-var y = x[0].childNodes[0].nodeValue;
-document.getElementsById("TITLE1").innerHTML = x[0].childNodes[0].nodeValue;
+y = document.querySelector('[id^="TITLE"]').id;
+document.getElementById("TITLE1").innerHTML = x[0].childNodes[0].nodeValue;
+
+
 }
