@@ -8,7 +8,7 @@
         $(this).remove();
       });
     }
-    
+    loadDoc();
   });
 
   // Back to top button
