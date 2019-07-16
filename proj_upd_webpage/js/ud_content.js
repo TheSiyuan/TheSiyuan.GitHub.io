@@ -16,6 +16,7 @@ function pushcountent(xml){
     var y;
     y = document.querySelectorAll('[id^="ud_"]');
     for (i=0; i<y.length; i++) {
+        console.log(i);
         x = xmlDoc.getElementsByTagName(y[i].id);
         document.getElementById(y[i].id).innerHTML =x[0].childNodes[0].nodeValue;
     }
