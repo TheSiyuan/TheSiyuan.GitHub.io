@@ -3,14 +3,14 @@ function loadDoc() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
         document.getElementById("demo1").innerHTML = this.responseText;
-        anotherfunction(this);
+        pushcountent(this);
         }
     };
     xhttp.open("GET", "userdefine/samplepage.xml", true);
     xhttp.send();
 }
 
-function anotherfunction(xml){
+function pushcountent(xml){
     var xmlDoc = xml.responseXML;
     var x;
     var i;
