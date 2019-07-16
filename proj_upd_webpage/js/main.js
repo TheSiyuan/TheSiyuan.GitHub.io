@@ -8,7 +8,7 @@
         $(this).remove();
       });
     }
-    loadDoc(); //pull data from xml file
+    
   });
 
   // Back to top button
