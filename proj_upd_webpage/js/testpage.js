@@ -18,7 +18,7 @@ xhttp.send();
 function anotherfunction(xml){
 var xmlDoc = xml.responseXML;
 var x = xmlDoc.getElementsByTagName("NAME");
-y = document.querySelector('[id^="TITLE"]').id;
+y = document.querySelectorAll('[id^="TITLE"]').id;
 document.getElementById("TITLE1").innerHTML = x[0].childNodes[0].nodeValue;
 
 
