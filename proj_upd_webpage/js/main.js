@@ -6,6 +6,7 @@
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
+        loadDoc();
       });
     }
     loadDoc(); //Pull User Defined Content to the page
