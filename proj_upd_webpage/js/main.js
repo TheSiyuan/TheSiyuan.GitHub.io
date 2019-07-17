@@ -164,7 +164,6 @@
 
   // progresses section
   $('#progresses').waypoint(function() {
-    loadDoc(); //pull in userdefind value
     $('.progress .progress-bar').each(function() {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
