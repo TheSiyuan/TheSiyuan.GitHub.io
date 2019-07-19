@@ -20,12 +20,8 @@ function pushcountent(xml){
         x = xmlDoc.getElementsByTagName(y[i].id);
         document.getElementById(y[i].id).innerHTML =x[0].childNodes[0].nodeValue;
     }
-    /* change aria-valuenow of progress bar
-    y = document.querySelectorAll('[class^="progress-bar"]');
-    x = document.querySelectorAll('[class^="progress-bar"]');
-    for (i=0; i<y.length; i++) {
-        console.log(i);
-        
-    }
-    */
+    
+    $('.progress-bar').each(function(index,value){
+        $(this).attr('aria-valuenow',y[index].innerHTML);
+    })
 }
