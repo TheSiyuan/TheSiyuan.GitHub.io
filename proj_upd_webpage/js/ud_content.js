@@ -20,7 +20,7 @@ function pushcountent(xml){
         x = xmlDoc.getElementsByTagName(y[i].id);
         document.getElementById(y[i].id).innerHTML =x[0].childNodes[0].nodeValue;
     }
-    
+    y = document.querySelectorAll('[id^="ud_scope_value_"]');
     $('.progress-bar').each(function(index,value){
         $(this).attr('aria-valuenow',y[index].innerHTML);
     })
