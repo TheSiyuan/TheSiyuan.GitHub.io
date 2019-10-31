@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <script>
+
+    </script>
+
+    </head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      img {
+        vertical-align: middle;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position:relative;
+        overflow: hidden;
+        display: block;
+        z-index: 1;
+       }
+      
+      /* Hide the images by default */
+      .mySlides {
+        align-content:center;
+        position:relative;
+        display: none;
+        overflow: hidden;
+        
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 2px;
+        font-size: 1vw;
+        color: white;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 10%;
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      .btn-group button {
+        background-color: #8A2BE2; /* Green background */
+        border: 1px solid Lavender; /* Lavender border */
+        color: white; /* White text */
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /* Float the buttons side by side */
+        border-radius: 5px;
+      }
+      
+      /* Clear floats (clearfix hack) */
+      .btn-group:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .btn-group button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+      }
+      
+      /* Add a background color on hover */
+      .btn-group button:hover {
+        background-color: #6A5ACD;
+      }
+      </style>
+<body>
+
+    <div class="btn-group" style="width:100%">
+       <button style="width:100%" onClick="window.location.href='Home Page.html'">Home Page</button>
+    </div>
+
+<div class="container">
+  <div class="mySlides" >
+    <div class="numbertext"> 1 </div>
+    <img src="Rendering/1.png" style="width: 100%" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 2 </div>
+    <img src="Rendering/2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 3 </div>
+    <img src="Rendering/3.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"> 4 </div>
+    <img src="Rendering/4.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 5 </div>
+    <img src="Rendering/5.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 6 </div>
+    <img src="Rendering/6.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 7 </div>
+    <img src="Rendering/7.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 8 </div>
+    <img src="Rendering/8.png" style="width: 100%" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 9 </div>
+    <img src="Rendering/9.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 10 </div>
+    <img src="Rendering/10.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"> 11 </div>
+    <img src="Rendering/11.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 12 </div>
+    <img src="Rendering/12.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 13 </div>
+    <img src="Rendering/13.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 14 </div>
+    <img src="Rendering/14.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 15 </div>
+    <img src="Rendering/15.png" style="width: 100%" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 16 </div>
+    <img src="Rendering/16.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 17 </div>
+    <img src="Rendering/17.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"> 18 </div>
+    <img src="Rendering/18.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 19 </div>
+    <img src="Rendering/19.png" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"> 20 </div>
+    <img src="Rendering/20.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)"> < </a>
+  <a class="next" onclick="plusSlides(1)"> > </a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Rendering/1.png" style="width:100%" onclick="currentSlide(1)" alt="Extrerior View">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/2.png" style="width:100%" onclick="currentSlide(2)" alt="Extrerior View 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/3.png" style="width:100%" onclick="currentSlide(3)" alt="Guest's Entrance">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/4.png" style="width:100%" onclick="currentSlide(4)" alt="Member's Entrance">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/5.png" style="width:100%" onclick="currentSlide(5)" alt="Entry">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/6.png" style="width:100%" onclick="currentSlide(6)" alt="Entry, Admin + Business Lounge">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/7.png" style="width:100%" onclick="currentSlide(7)" alt="Admin + Business Lounge">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/8.png" style="width:100%" onclick="currentSlide(8)" alt="Club Dining + Lounge">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/9.png" style="width:100%" onclick="currentSlide(9)" alt="Clud Dining">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/10.png" style="width:100%" onclick="currentSlide(10)" alt="Fitness Center">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Rendering/11.png" style="width:100%" onclick="currentSlide(11)" alt="Club Lounge">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/12.png" style="width:100%" onclick="currentSlide(12)" alt="Braemar Ballroom">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/13.png" style="width:100%" onclick="currentSlide(13)" alt="Braemar Ballroom">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/14.png" style="width:100%" onclick="currentSlide(14)" alt="Cafe Bar + Pro-Shop">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/15.png" style="width:100%" onclick="currentSlide(15)" alt="Second Floor Café">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/16.png" style="width:100%" onclick="currentSlide(16)" alt="Second Floor Café">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/17.png" style="width:100%" onclick="currentSlide(17)" alt="16+ Locker Rooms">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/18.png" style="width:100%" onclick="currentSlide(18)" alt="Tennis Center Extrerior">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/19.png" style="width:100%" onclick="currentSlide(19)" alt="Tennis Center Extrerior">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rendering/20.png" style="width:100%" onclick="currentSlide(20)" alt="Gymnasium">
+    </div>
+  </div>
+</div>
+<script>
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var slideIndex = url.searchParams.get("slideIndex");
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Reno Area 1 - 360 Live Stream</title>
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+<script src="dist/aframe-master.js"></script>
+<style>
+.btn-group button {
+  background-color: #8A2BE2; /* Green background */
+  border: 1px solid Lavender; /* Lavender border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  border-radius: 5px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #6A5ACD;
+}
+</style>
+</head>
+  <body>
+
+<!-- Three buttons in a group -->
+<div class="btn-group" style="width:100%">
+  <button style="width:33.3%" onClick="window.location.href='Addition 2.html'">Previous View</button>
+  <button style="width:33.3%" onClick="window.location.href='Home Page.html'">Home Page</button>
+  <button style="width:33.3%" onClick="window.location.href='Reno Area 2.html'">Next View</button>
+</div>
+  <a-scene style="width:99.5%;height:95%">
+  <a-sky src="video/YIVR_Stitch_0804_360.MP4" time = 60 rotation="0 90 0"></a-sky>
+  <a-text font="kelsonsans" value="DEMO" width="8" position="1 2 -3" rotation="0 0 0"></a-text>
+  <a-text font="kelsonsans" value="Reno Area 1" width="8" position="1 1.5 -3" rotation="0 0 0"></a-text>
+  </a-scene>
+
+  </body>
+</html>
